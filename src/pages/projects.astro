@@ -1,0 +1,9 @@
+---
+import lang from '../constants/lang';
+import Layout from '../layouts/Layout.astro';
+import ProjectLayout from '../components/ProjectLayout.svelte';
+---
+
+<Layout title={lang.title}>
+  <ProjectLayout client:only />
+</Layout>

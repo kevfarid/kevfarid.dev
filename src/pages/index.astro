@@ -2,11 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import SocialMedia from '../components/SocialMedia.astro';
 import lang from '../constants/lang';
+import Projects from '../components/Projects.astro';
 ---
 
 <Layout title={lang.title}>
   <main
-    class='h-screen w-screen overflow-hidden bg-pattern shadow-[20px_20px_200px_129px_rgba(9,9,9,0.80)_inset] gap-4 flex justify-center items-center flex-col'
+    class='h-screen w-full overflow-hidden bg-pattern shadow-[20px_20px_200px_129px_rgba(9,9,9,0.80)_inset] gap-4 flex justify-center items-center flex-col'
   >
     <section class='relative w-fit h-fit text-center'>
       <h1 class='relative z-10 text-9xl font-bold uppercase'>
@@ -92,5 +93,10 @@ import lang from '../constants/lang';
     <a href={lang.home.viewMoreUrl} class='uppercase text-xl absolute bottom-4'>
       {lang.home.viewMore}
     </a>
+  </main>
+  <main
+    class='w-full h-full shadow-[20px_20px_200px_129px_rgba(9,9,9,0.80)_inset]'
+  >
+    <Projects />
   </main>
 </Layout>

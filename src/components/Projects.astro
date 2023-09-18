@@ -1,0 +1,11 @@
+---
+import ProjectLayout from './ProjectLayout.svelte';
+import lang from '../constants/lang';
+---
+
+<section id='projects' class='py-16 lg:my-52 my-24'>
+  <h2 class='text-5xl font-semibold mb-8 text-center'>
+    {lang.projectsTexts.title}
+  </h2>
+  <ProjectLayout client:only />
+</section>

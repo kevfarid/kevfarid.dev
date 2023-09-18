@@ -23,37 +23,42 @@ export default {
   ],
   projects: [
     {
-      key: 0,
-      title: 'Lopez Service',
-      image: 'https://source.unsplash.com/random/800x600',
-    },
-    {
-      key: 1,
       title: 'Topcars.io',
-      image: 'https://source.unsplash.com/random/800x600',
+      image: '/projects/1.png',
       liveUrl: 'https://topcars.io',
     },
     {
-      key: 2,
       title: 'Notishortz',
-      image: 'https://source.unsplash.com/random/800x600',
+      image: '/projects/2.png',
       liveUrl: 'https://notishortz.com',
     },
     {
-      key: 3,
       title: 'Onbelai',
-      image: 'https://source.unsplash.com/random/800x600',
+      image: '/projects/4.png',
       liveUrl: 'https://onbelai.com',
     },
     {
-      key: 4,
       title: 'King Laundry',
-      image: 'https://source.unsplash.com/random/800x600',
+      image: '/projects/3.png',
       liveUrl: 'https://kinglaundry.co',
+    },
+    {
+      title: 'Vision Warehouse',
+      image: '/projects/5.png',
+      liveUrl: 'https://www.spotcloud.io/',
+    },
+    {
+      title: 'Lopez Service',
+      image: '/projects/6.png',
     },
   ],
   home: {
     viewMore: 'View my projects',
-    viewMoreUrl: '/projects',
+    viewMoreUrl: '#projects',
+  },
+  projectsTexts: {
+    live: 'View Live',
+    repo: 'Github',
+    title: 'My Projects',
   },
 };

@@ -9,16 +9,16 @@ export interface Props extends HTMLAttributes<'nav'> {
   }[];
 }
 
-const { social, ...props } = Astro.props;
+const { social, class: className, ...props } = Astro.props;
 ---
 
-<nav {...props}>
+<nav {...props} class={`text-3xl ${className}`}>
   <ul class='flex gap-4 items-center justify-center'>
     {
       social.map((item) => (
         <li>
           <a href={item.url} target='_blank' rel='noopener noreferrer'>
-            <i class={`${item.icon} text-3xl`} />
+            <i class={`${item.icon}`} />
           </a>
         </li>
       ))

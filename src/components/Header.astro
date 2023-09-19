@@ -1,0 +1,42 @@
+---
+import lang from '../constants/lang';
+---
+
+<header
+  class='py-4 px-6 fixed top-0 left-0 w-full z-[90] flex items-center justify-between'
+  id='header'
+>
+  <nav>
+    <a href='/' class='text-lg font-semibold'>
+      {lang.titleShort}
+    </a>
+  </nav>
+  <nav class='flex gap-8 items-center'>
+    {
+      lang.itemsHeader.map((item) => (
+        <a href={item.path} class='text-lg'>
+          {item.label}
+        </a>
+      ))
+    }
+  </nav>
+</header>
+
+<style>
+  .scrolled {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+  }
+</style>
+
+<script>
+  const header: HTMLElement | null = document.querySelector('header');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      header?.classList.add('scrolled');
+    } else {
+      header?.classList.remove('scrolled');
+    }
+  });
+</script>

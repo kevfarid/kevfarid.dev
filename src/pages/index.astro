@@ -9,12 +9,12 @@ import Projects from '../components/Projects.astro';
   <main
     class='h-screen w-full overflow-hidden bg-pattern shadow-[20px_20px_200px_129px_rgba(9,9,9,0.80)_inset] gap-4 flex justify-center items-center flex-col'
   >
-    <section class='relative w-fit h-fit text-center'>
-      <h1 class='relative z-10 text-9xl font-bold uppercase'>
+    <section class='relative w-fit h-fit text-center' id='home'>
+      <h1 class='relative z-10 text-[15vw] md:text-9xl font-bold uppercase'>
         {lang.titleShort}
       </h1>
       <h2
-        class='relative z-10 text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light'
+        class='relative z-10 w-fit text-[8vw] md:text-5xl py-2 font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light typewriter'
       >
         {lang.subtitle}
       </h2>
@@ -100,3 +100,35 @@ import Projects from '../components/Projects.astro';
     <Projects />
   </main>
 </Layout>
+
+<style>
+  .typewriter {
+    overflow: hidden;
+    border-right: 0.15em solid #1e90ff;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #1e90ff;
+    }
+  }
+</style>

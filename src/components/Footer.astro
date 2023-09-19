@@ -1,0 +1,9 @@
+---
+import lang from '../constants/lang';
+import SocialMedia from './SocialMedia.astro';
+---
+
+<footer class='flex flex-col items-center justify-center gap-4 px-8 py-4'>
+  <SocialMedia social={lang.socialMedia} class='!text-xl' />
+  <h2>{lang.footer.made}</h2>
+</footer>

@@ -3,7 +3,7 @@ export default {
   titleShort: 'Kevin Cruz',
   description:
     "I'm a Frontend Developer with 4 years of experience. I'm passionate about technology and innovation.",
-  subtitle: 'Frontend Developer',
+  subtitle: 'Software Engineer',
   socialMedia: [
     {
       name: 'Twitter',
@@ -24,12 +24,12 @@ export default {
   projects: [
     {
       title: 'Topcars.io',
-      image: '/projects/1.png',
+      image: '/projects/2.png',
       liveUrl: 'https://topcars.io',
     },
     {
       title: 'Notishortz',
-      image: '/projects/2.png',
+      image: '/projects/1.png',
       liveUrl: 'https://notishortz.com',
     },
     {
@@ -60,5 +60,14 @@ export default {
     live: 'View Live',
     repo: 'Github',
     title: 'My Projects',
+  },
+  itemsHeader: [
+    {
+      label: 'Projects',
+      path: '/#projects',
+    },
+  ],
+  footer: {
+    made: 'Made with 🖤 by Kevin Farid Cruz',
   },
 };
